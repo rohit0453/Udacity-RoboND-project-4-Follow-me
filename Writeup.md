@@ -46,6 +46,7 @@ Skip connections allow the network to retain information from prior layers that 
 # Model 
 
 [image_2]: ./docs/misc/2.png
+![alt text][image_2]
 
 ```python
 def fcn_model(inputs, num_classes):
