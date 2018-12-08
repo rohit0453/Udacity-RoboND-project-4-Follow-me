@@ -92,6 +92,12 @@ validation_steps = 50
 workers = 2
 ```
 Hyperparameters were tuned manually by inspection method i.e, trying out different value, checking out the performance and adjusting again.  
+The range of learning rate was: 0.01-0.0009.
+
+Regarding the batch_size it was calculated based on initial dataset size of 3000 images by estimating around 200 steps_per_epoch. Therefore, the batch_size was kept equal to 100. Another reason behind this value is save computation time to train the nework. Eventually, this number could be increased in order to avoid floatuation of error through epochs.
+
+The chosen number of epochs was 40. The adopted procedure was recording 15 epochs each time and save the weights according to error keep decreasing and the network could converge to a local minimum.
+
 # Training
 
 The model was trained using Udacity GPU Workspace.
@@ -101,6 +107,7 @@ The model was trained using Udacity GPU Workspace.
 final score = 0.406304667197
 
 final IoU = 0.551718969142
+
 # Future Enhancements
 This model was trained on people, however, it could be used to train on any other objects of interest such as dog, cat, Car, Horse etc. The model could carefully be added with more convolution layers on both encoder and decoder side could conceivably be trained on any set of labelled data large enough. The learning rate can be coded to decrease over time according to the differential of the validation loss over time and to undertake a performance-based search.
 
