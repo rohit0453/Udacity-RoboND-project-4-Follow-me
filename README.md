@@ -96,7 +96,7 @@ The range of learning rate was: 0.01-0.0009.
 
 Regarding the batch_size it was calculated based on initial dataset size of 3000 images by estimating around 200 steps_per_epoch. Therefore, the batch_size was kept equal to 100. Another reason behind this value is save computation time to train the nework. Eventually, this number could be increased in order to avoid floatuation of error through epochs.
 
-The chosen number of epochs was 40. The adopted procedure was recording 15 epochs each time and save the weights according to error keep decreasing and the network could converge to a local minimum.
+The chosen number of epochs was 40. The adopted procedure was recording 40 epochs each time and save the weights according to error keep decreasing and the network could converge to a local minimum.
 
 # Training
 
